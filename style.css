@@ -264,7 +264,7 @@ img {
         margin-top: 20px;
     }
     #hero h1 {
-        font-size: 12px;
+        font-size: 13px;
         margin: 0;
         padding: 0;
         line-height: 1;
@@ -275,7 +275,7 @@ img {
         padding: 20px;
     }
     #hero h3{
-        font-size: 12px;
+        font-size: 13px;
         margin: 0;
         padding: 0;
         line-height: 1;
@@ -284,7 +284,7 @@ img {
         color: rgb(0, 0, 0);
     }
     #hero h2 {
-        font-size: 12px;
+        font-size: 13px;
         line-height: 24px;
     }
     #hero .social_icon{
@@ -326,8 +326,39 @@ img {
     }
 
     #about h2 {
-        font-size: 18px;
+        font-size: 12px;
         line-height: 24px;
+    }
+    #about h1{
+        font-size: 13px;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        background: #1b1b1b;
+        padding: 20px;
+    }
+    #about .heading{
+        font-size: 13px;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: #fff;
+        background: #1b1b1b;
+        padding: 5px;
+    }
+    #about p{
+        font-size: 13px;
+    }
+    #about strong{
+        font-size: 13px;
+    }
+    #about span{
+        font-size: 13px;
     }
 }
 #about h1{
