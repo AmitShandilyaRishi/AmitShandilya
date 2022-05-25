@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background: #ffa600;
+}
+body{
+    background: #eefde2;
+}
+a {
+    color: #5c9f24;
+}
+
+a:hover {
+    color: #74c92d;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+}
+
+nav {
+    height: 80px;
+    background: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+}
+
+nav .logo {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background: #1b1b1b;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    background: #1b1b1b;
+}
+
+nav ul li {
+    margin: 0 5px;
+    background: #1b1b1b;
+}
+
+nav a {
+    display: block;
+    position: relative;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    padding: 0 4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    background: #1b1b1b;
+}
+
+nav>ul>li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: #71e215;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover::before,
+nav li:hover>a::before,
+nav .active>a::before {
+    visibility: visible;
+    width: 100%
+}
+
+nav .menu-btn i {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    background: #1b1b1b;
+}
+
+/* login Button */
+.login-btn {
+    margin-left: 25px;
+    color: #fff;
+    border-radius: 4px;
+    padding: 6px 25px 8px 25px;
+    white-space: nowrap;
+    transition: 0.3s;
+    font-size: 13px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid #7ae721;
+    text-decoration: none;
+}
+
+.login-btn:hover {
+    background: #79e71f;
+    color: #fff;
+}
+
+#click {
+    display: none;
+}
+
+@media (max-width : 768px) {
+    nav .menu-btn i {
+        display: block;
+    }
+
+    #click:checked~.menu-btn i::before {
+        content: "\f00d";
+        background: #1b1b1b;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    #click:checked~ul {
+        left: 0%;
+    }
+
+    nav ul li {
+        margin: 40px 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        display: block;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        color: cyan;
+        background: none;
+    }
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+}
+
+img {
+   
+    border: #71e215;
+    padding: 2%;
+}
+
+.profile_image {
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 40%;
+    border: 3px solid #73AD21;
+    padding: 10px; 
+    border-radius: 50%;
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    margin-top: 60px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+#hero .hero-container {
+    z-index: 2;
+    min-width: 300px;
+}
+
+#hero h1 {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background: #1b1b1b;
+    padding: 20px;
+}
+#hero h3{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+
+@media (max-width : 768px) {
+    #hero {
+        background-attachment: fixed;
+        width: 100%;
+        height: 70vh;
+        margin-top: 20px;
+    }
+
+    #hero h2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+#hero .social_icon{
+    margin: 50px;
+}
+
+#hero .social_icon a i{
+    font-size: 40px;
+    display: inline-block;
+    background: #212431;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    border-radius: 50%;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    transition: all 0.3s;
+}
+
+#hero .social_icon a i:hover {
+    background: #ff0000;
+    color: #fff;
+    text-decoration: none;
+}
+
+#about{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+@media (max-width : 768px) {
+    #about {
+        background-attachment: fixed;
+        width: 100%;
+        height: 100%;
+        margin-top: 10px;
+    }
+
+    #about h2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+#about h1{
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background: #1b1b1b;
+    padding: 20px;
+}
+#about .heading{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    background: #1b1b1b;
+    padding: 5px;
+}
+#about p{
+    font-size: 20px;
+}
+#about strong{
+    font-size: 20px;
+}
+#about span{
+    font-size: 20px;
+}
+.right{
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 40%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+.profile_image2{
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 10%;
+    padding: 10px;
+}
+#contact{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
+    margin-top: 60px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+#contact h1{
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background: #1b1b1b;
+    padding: 20px;
+}
+#contact h2{
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(255, 136, 0);
+    background: #000000;
+    padding: 20px;
+}
+#contact p{
+    font-size: 20px;
+}
+#contact strong{
+    font-size: 20px;
+}
+#contact span{
+    font-size: 20px;
+}
+#end h1{
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background: #1b1b1b;
+    padding: 20px;
+    text-align: center;
+}
