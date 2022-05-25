@@ -360,6 +360,48 @@ img {
     #about span{
         font-size: 13px;
     }
+    #contact{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        width: 100%;
+        height: 100vh;
+        margin-top: 60px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    #contact h1{
+        font-size: 13px;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #fff;
+        background: #1b1b1b;
+        padding: 10px;
+    }
+    #contact h2{
+        font-size: 13px;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: rgb(255, 136, 0);
+        background: #000000;
+        padding: 10px;
+    }
+    #contact p{
+        font-size: 13px;
+    }
+    #contact strong{
+        font-size: 13px;
+    }
+    #contact span{
+        font-size: 13px;
+    }
 }
 #about h1{
     font-size: 25px;
